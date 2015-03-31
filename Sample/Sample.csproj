@@ -46,10 +46,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="UmengUpdateBinding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UmengUpdateBinding\bin\Debug\UmengUpdateBinding.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -167,6 +163,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values-zh\umeng_update_string.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UmengUpdateBinding\UmengUpdateBinding.csproj">
+      <Project>{50ac5c66-6913-426e-abd9-710c47e67a62}</Project>
+      <Name>UmengUpdateBinding</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
